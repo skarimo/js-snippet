@@ -101,9 +101,9 @@ function imagesDiv(imageLinksArray) {
         'text-align': 'center',
         'border-style': 'solid',
         'border-color': `grey`,
-        'height': '320px',
+        'height': '40%',
         'margin': '20px',
-        'width':'auto'
+        'width':'40%'
       })
       div.append(image)
     })
