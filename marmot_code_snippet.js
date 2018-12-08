@@ -60,7 +60,7 @@ $.get(URL, function(response) {
               'position': 'fixed',
               'background-color': 'white',
               'z-index': 4,
-              'width': '50%',
+              // 'width': '50%',
               'text-align': 'center',
               'padding': `2%`
             })
