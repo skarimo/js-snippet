@@ -35,7 +35,8 @@ $.get(URL, function(response) {
               'z-index': 4,
               'height': '100%',
               'width': '100%',
-              'text-align': 'center'
+              'text-align': 'center',
+              'display': 'none'
             })
 
 
@@ -65,6 +66,7 @@ $.get(URL, function(response) {
             })
             wrapperDiv.append(div)
           document.querySelector('#wrapper').prepend(wrapperDiv)
+          $(wrapperDiv).fadeIn()
           appended = true
           div.style.marginLeft = `${(((parseInt($( window ).width()) - parseInt(div.clientWidth)))/2)}px`
           div.style.marginTop = `${(((parseInt($( window ).height()) - parseInt(div.clientHeight)))/2)}px`
@@ -101,9 +103,9 @@ function imagesDiv(imageLinksArray) {
         'text-align': 'center',
         'border-style': 'solid',
         'border-color': `grey`,
-        'height': '40%',
+        'height': '35%',
         'margin': '20px',
-        'width':'40%'
+        'width':'35%'
       })
       div.append(image)
     })
