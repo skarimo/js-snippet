@@ -90,11 +90,19 @@ function imagesDiv(imageLinksArray) {
       'text-align': 'center',
       'display': 'flex',
       'justify-content': 'center',
-      'height': '50%',
-      'width': '100%',
+      'height': '40%',
+      'width': '90%',
       'padding-top': '2%'
     })
+
+
   imageLinksArray.forEach((img) => {
+    const div2 = document.createElement('div')
+    $(div2).css({
+      'height': '40%',
+      'width': '40%',
+      'padding': '10px'
+    })
     const image = document.createElement('img')
       image.src = img
       $(image).css({
@@ -103,11 +111,13 @@ function imagesDiv(imageLinksArray) {
         'text-align': 'center',
         'border-style': 'solid',
         'border-color': `grey`,
-        'height': '35%',
         'margin': '20px',
-        'width':'35%'
+        'max-width':'100%',
+        'max-height':'100%'
+
       })
-      div.append(image)
+      div2.append(image)
+      div.append(div2)
     })
   return div
 }
